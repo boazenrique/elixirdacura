@@ -112,7 +112,7 @@ export function AlertStep() {
           onClick={() => router.push("/pitch")}
           className="w-full rounded-xl bg-teal-600 py-6 text-base font-bold hover:bg-teal-700"
         >
-          Quero meu protocolo personalizado
+          Quero o Elixir da Cura Natural
         </Button>
       </motion.div>
     </motion.div>
