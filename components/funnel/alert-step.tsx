@@ -98,7 +98,7 @@ export function AlertStep() {
         </p>
 
         <p className="font-bold text-foreground text-center">
-          Você está pronto(a) para ter acesso a receita completa do Elixir da Cura Natural e Acabar de vez com suas dores?
+          Você gostaria de ter acesso agora a receita completa do Elixir da Cura Natural e Acabar de vez com suas dores?
         </p>
       </div>
 

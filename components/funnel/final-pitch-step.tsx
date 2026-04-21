@@ -100,7 +100,7 @@ export function FinalPitchStep() {
         className="space-y-3 text-center"
       >
         <h1 className="text-3xl font-extrabold text-foreground leading-tight">
-          Garanta agora o{" "}
+          Acesse agora a receita do{" "}
           <span className="text-teal-600">Elixir da Cura Natural</span>{" "}
           e acabe com todas as dores no corpo em{" "}
           <span className="text-teal-600">3 dias</span>
@@ -118,7 +118,7 @@ export function FinalPitchStep() {
         className="space-y-6"
       >
         <h2 className="text-center text-lg font-bold text-foreground">
-          Veja o que vai acontecer em{" "}
+          Resultados reais em{" "}
           <span className="text-teal-600">3 dias:</span>
         </h2>
 
@@ -258,7 +258,7 @@ export function FinalPitchStep() {
         transition={{ delay: 0.5 }}
         className="text-center text-xl font-bold text-foreground pt-4"
       >
-        Veja tudo que você vai receber:
+        🎁4 Bônus Exclusivos:
       </motion.h3>
 
       {/* Benefit Cards Grid */}
@@ -279,7 +279,7 @@ export function FinalPitchStep() {
               className="h-20 w-20 object-contain"
             />
           </div>
-          <h4 className="text-sm font-bold text-foreground mb-1">Protocolo Adeus Dor Personalizado</h4>
+          <h4 className="text-sm font-bold text-foreground mb-1">Método Adeus Dor Personalizado</h4>
           <p className="text-xs text-gray-600 leading-relaxed">
             Ritual com combinações naturais que atuam diretamente na inflamação e no desgaste das articulações
           </p>
@@ -366,7 +366,7 @@ export function FinalPitchStep() {
           </div>
           <h4 className="text-sm font-bold text-foreground mb-1">Rotina Anti-Inflamatória</h4>
           <p className="text-xs text-gray-600 leading-relaxed">
-            Método anti-inflamatório de poucos minutos por dia para evitar que as dores voltem a piorar
+            Rotina anti-inflamatória de poucos minutos por dia para evitar que as dores voltem a piorar
           </p>
         </div>
       </motion.div>
