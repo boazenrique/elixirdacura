@@ -24,9 +24,9 @@ export function PreDiagnosisStep({ onComplete }: PreDiagnosisStepProps) {
         className="space-y-4"
       >
         <h1 className="text-balance text-2xl font-bold leading-tight text-foreground">
-          Novo “Elixir da cura” chama atenção das pessoas na internet por acabar com todas as dores no corpo em 3 dias
+          Conheça o Famoso “Elixir da cura” que pessoas comuns estão tomando para acabar com as dores no corpo em 3 dias
         </h1>
-        <p className="text-black text-black">Faça o diagnóstico rápido de 2 minutos e descubra o que realmente está causando suas dores, e no final tenha acesso a receita do “Elixir da cura natural”</p>
+        <p className="text-black text-black">Faça o diagnóstico rápido e descubra o que está causando suas dores, e no final tenha acesso a receita do “Elixir da cura natural”</p>
       </motion.div>
 
       {/* Hero Image */}
@@ -37,7 +37,7 @@ export function PreDiagnosisStep({ onComplete }: PreDiagnosisStepProps) {
         className="relative mx-auto overflow-hidden rounded-2xl shadow-lg"
       >
         <Image
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2-f7G7J53VvbRBO01e4oRjhsqukYUrBr.png"
+          src="/images/banner1.png"
           alt="Mulher com barriga inchada"
           width={380}
           height={320}
