@@ -5,17 +5,15 @@ import { AnimatePresence } from "framer-motion"
 import { Header } from "@/components/funnel/header"
 import { PreDiagnosisStep } from "@/components/funnel/pre-diagnosis-step"
 import { AssessmentStep } from "@/components/funnel/assessment-step"
-import { ProfileStep } from "@/components/funnel/profile-step"
 import { AlertStep } from "@/components/funnel/alert-step"
 import { trackFunnelStep } from "@/lib/facebook-pixel"
 
-export type FunnelStep = "pre-diagnosis" | "assessment" | "profile" | "alert"
+export type FunnelStep = "pre-diagnosis" | "assessment" | "alert"
 
 const stepProgress: Record<FunnelStep, number> = {
   "pre-diagnosis": 0,
   assessment: 25,
-  profile: 60,
-  alert: 85,
+  alert: 75,
 }
 
 export default function FunnelPage() {
@@ -27,7 +25,6 @@ export default function FunnelPage() {
     const stepNames: Record<FunnelStep, string> = {
       "pre-diagnosis": "Pré-Diagnóstico",
       assessment: "Avaliação",
-      profile: "Perfil Identificado",
       alert: "Estado de Alerta",
     }
 
@@ -57,12 +54,10 @@ export default function FunnelPage() {
               answers={answers}
               setAnswers={setAnswers}
               addProgress={addProgress}
-              onComplete={() => goToStep("profile")}
+              onComplete={() => goToStep("alert")}
             />
           )}
-          {currentStep === "profile" && (
-            <ProfileStep key="profile" addProgress={addProgress} onComplete={() => goToStep("alert")} />
-          )}
+
           {currentStep === "alert" && <AlertStep key="alert" />}
         </AnimatePresence>
       </main>

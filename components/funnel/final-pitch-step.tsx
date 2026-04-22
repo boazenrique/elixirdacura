@@ -100,9 +100,9 @@ export function FinalPitchStep() {
         className="space-y-3 text-center"
       >
         <h1 className="text-3xl font-extrabold text-foreground leading-tight">
-          Acesse agora a receita do{" "}
+          Receba imediatamente no seu WhatsApp a receita do{" "}
           <span className="text-teal-600">Elixir da Cura Natural</span>{" "}
-          e acabe com todas as dores no corpo em{" "}
+          para acabar com as dores no corpo em{" "}
           <span className="text-teal-600">3 dias</span>
         </h1>
         <p className="text-base text-muted-foreground">
