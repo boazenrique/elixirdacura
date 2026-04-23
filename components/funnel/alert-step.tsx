@@ -98,7 +98,7 @@ export function AlertStep() {
         </p>
 
         <p className="font-bold text-foreground text-center">
-          Você gostaria de ter acesso agora a receita completa do Elixir da Cura Natural e Acabar de vez com suas dores?
+          Você gostaria de ter acesso agora a receita completa do Elixir da Cura Natural para Acabar com suas dores?
         </p>
       </div>
 
@@ -112,7 +112,7 @@ export function AlertStep() {
           onClick={() => router.push("/pitch")}
           className="w-full rounded-xl bg-teal-600 py-6 text-base font-bold hover:bg-teal-700"
         >
-          Quero o Elixir da Cura Natural
+          Quero a receita do Elixir
         </Button>
       </motion.div>
     </motion.div>

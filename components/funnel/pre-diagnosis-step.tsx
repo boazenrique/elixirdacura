@@ -24,9 +24,9 @@ export function PreDiagnosisStep({ onComplete }: PreDiagnosisStepProps) {
         className="space-y-4"
       >
         <h1 className="text-balance text-2xl font-bold leading-tight text-foreground">
-          Conheça o poderoso “Elixir da Cura Natural” que pessoas comuns estão usando para acabar com as dores no corpo em 3 dias
+          Não tem doença ou dor no corpo que resista a esse Elixir Natural
         </h1>
-        <p className="text-black text-black">Faça o diagnóstico rápido e descubra o que está causando suas dores, e no final tenha acesso a receita do “Elixir da cura natural”</p>
+        <p className="text-black text-black">Faça o diagnóstico para ter acesso a fórmula completa do novo tratamento natural para as dores no corpo</p>
       </motion.div>
 
       {/* Hero Image */}

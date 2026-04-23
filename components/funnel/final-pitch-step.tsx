@@ -100,13 +100,13 @@ export function FinalPitchStep() {
         className="space-y-3 text-center"
       >
         <h1 className="text-3xl font-extrabold text-foreground leading-tight">
-          Receba imediatamente no seu WhatsApp a receita do{" "}
+          Tenha acesso agora a receita completa do{" "}
           <span className="text-teal-600">Elixir da Cura Natural</span>{" "}
-          para acabar com as dores no corpo em{" "}
-          <span className="text-teal-600">3 dias</span>
+          e inicie hoje seu tratamento para{" "}
+          <span className="text-teal-600">acabar com suas dores no corpo.</span>
         </h1>
         <p className="text-base text-muted-foreground">
-          A causa das suas dores é interna, e pode ser tratada sem uso de medicamentos, ou fisioterapias.
+          Tratamento 100% natural, sem efeitos colaterias e sem contraindicações.
         </p>
       </motion.div>
 
@@ -118,15 +118,15 @@ export function FinalPitchStep() {
         className="space-y-6"
       >
         <h2 className="text-center text-lg font-bold text-foreground">
-          Resultados reais em{" "}
-          <span className="text-teal-600">3 dias:</span>
+          Veja o diferencial desse{" "}
+          <span className="text-teal-600">tratamento:</span>
         </h2>
 
         {/* Benefit 1 */}
         <div className="space-y-3">
           <p className="text-sm font-semibold text-foreground flex items-start gap-2">
             <span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-teal-500 text-white text-xs font-bold mt-0.5">✓</span>
-            Reduz a inflamação crônica que desgasta suas articulações diariamente
+            Reduz a inflamação interna que desgasta suas articulações diariamente
           </p>
           <video
             src="/images/varti.mp4"
@@ -258,7 +258,7 @@ export function FinalPitchStep() {
         transition={{ delay: 0.5 }}
         className="text-center text-xl font-bold text-foreground pt-4"
       >
-        🎁4 Bônus Exclusivos:
+        Veja tudo que você vai receber:
       </motion.h3>
 
       {/* Benefit Cards Grid */}
@@ -279,9 +279,9 @@ export function FinalPitchStep() {
               className="h-20 w-20 object-contain"
             />
           </div>
-          <h4 className="text-sm font-bold text-foreground mb-1">Método Adeus Dor Personalizado</h4>
+          <h4 className="text-sm font-bold text-foreground mb-1">Receita Completa do Elixir</h4>
           <p className="text-xs text-gray-600 leading-relaxed">
-            Ritual com combinações naturais que atuam diretamente na inflamação e no desgaste das articulações
+            Receita completa com a fórmula secreta, e passo a passo do modo de preparo, pra você fazer o elixir na sua casa.
           </p>
         </div>
 
@@ -313,9 +313,9 @@ export function FinalPitchStep() {
               className="h-20 w-20 object-contain"
             />
           </div>
-          <h4 className="text-sm font-bold text-foreground mb-1">Grupo VIP</h4>
+          <h4 className="text-sm font-bold text-foreground mb-1">Grupo WhatsApp</h4>
           <p className="text-xs text-gray-600 leading-relaxed">
-            Acesso a um grupo exclusivo com pessoas que estão aplicando o protocolo e compartilhando evolução
+            Acesso a um grupo exclusivo com pessoas que estão usando o tratamento e compartilhando resultados
           </p>
         </div>
 
@@ -380,19 +380,19 @@ export function FinalPitchStep() {
       >
         {/* Bonus Value Text */}
         <p className="text-center text-red-600 text-sm">
-          O valor total desses bônus ficaria em:<span className="line-through ml-1">R$550,00</span>
+          O valor total de todo o tratamento ficaria em:<span className="line-through ml-1">R$550,00</span>
         </p>
 
         {/* Pricing Card */}
         <div className="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm">
           {/* Green Header */}
           <div className="px-4 py-2 text-center" style={{ backgroundColor: "#05aa27" }}>
-            <p className="text-sm font-bold text-white tracking-wide">PROMOÇÃO VÁLIDO SOMENTE HOJE</p>
+            <p className="text-sm font-bold text-white tracking-wide">PROMOÇÃO VÁLIDA SOMENTE HOJE</p>
           </div>
 
           {/* Price Content */}
           <div className="flex items-center justify-between px-4 py-4">
-            <p className="text-lg font-bold text-foreground">Elixir da Cura + Bônus</p>
+            <p className="text-lg font-bold text-foreground">Elixir da Cura Natural</p>
             <div className="text-right">
               <p className="text-xs text-gray-500">97%off</p>
               <p className="text-2xl font-bold" style={{ color: "#05aa27" }}>R$ 27,00</p>
@@ -409,7 +409,7 @@ export function FinalPitchStep() {
           className="block w-full rounded-xl py-4 text-base font-bold text-white text-center shadow-md transition-all active:scale-[0.98] animate-pulse-forward"
           style={{ backgroundColor: "#05aa27" }}
         >
-          Quero garantir agora
+          Quero o tratamento agora
         </a>
       </motion.div>
 
@@ -585,13 +585,13 @@ export function FinalPitchStep() {
         {/* Highlighted Price */}
         <div className="bg-yellow-100 border-l-4 border-yellow-400 px-4 py-2 rounded-r-lg">
           <p className="text-sm font-bold text-foreground">
-            Elixir da Cura Natural + Bônus da Dra Stefanny R$27
+            Elixir da Cura Natural da Dra Stefanny R$27
           </p>
         </div>
 
         {/* Value Text */}
         <p className="text-sm text-gray-600 leading-relaxed">
-          Pelo valor de uma pizza, você vai investir em um método personalizado, validado e receber todos os bônus que a Dra liberou.
+          Pelo valor de uma pizza, você vai investir em um tratamento personalizado, validado e receber todos os bônus que a Dra liberou.
         </p>
 
         {/* Guarantee Image */}
@@ -620,12 +620,12 @@ export function FinalPitchStep() {
         <div className="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm">
           {/* Green Header */}
           <div className="px-4 py-2 text-center" style={{ backgroundColor: "#05aa27" }}>
-            <p className="text-sm font-bold text-white tracking-wide">PROMOÇÃO VÁLIDO SOMENTE HOJE</p>
+            <p className="text-sm font-bold text-white tracking-wide">PROMOÇÃO VÁLIDA SOMENTE HOJE</p>
           </div>
 
           {/* Price Content */}
           <div className="flex items-center justify-between px-4 py-4">
-            <p className="text-lg font-bold text-foreground">Elixir da Cura + Bônus</p>
+            <p className="text-lg font-bold text-foreground">Elixir da Cura Natural</p>
             <div className="text-right">
               <p className="text-xs text-gray-500">97%off</p>
               <p className="text-2xl font-bold" style={{ color: "#05aa27" }}>R$ 27,00</p>

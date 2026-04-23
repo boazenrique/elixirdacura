@@ -79,8 +79,8 @@ const questions: Question[] = [
   },
   {
     id: 4,
-    question: "Mais de 11.000 pessoas estão usando o “Elixir da Cura Natural” e já relataram uma recuperação que surpreendeu médicos e especialistas.",
-    subtitle: "Ouça com atenção o áudio da Dra. Stefanny, que explica o motivo desse Elixir funcionar tanto:",
+    question: "Mais de 11.129 pessoas fizeram esse diagnóstico e no final tiveram acesso ao Elixir da Cura Natural",
+    subtitle: "Ouça com atenção o áudio da Dra. Stefanny, que explica o motivo desse tratamento funcionar tanto:",
     isAudioStep: true,
     audioSrc: "/001.MP3",
     reward: 3,
@@ -135,7 +135,7 @@ const questions: Question[] = [
   },
   {
     id: 10,
-    question: "Você teria 5 minutos por dia para fazer o Elixir da cura natural na sua casa para acabar de vez com as dores no corpo?",
+    question: "Você teria 15 minutos por dia para fazer o tratamento do Elixir Natural para acabar com as dores no corpo?",
     subtitle: "Sua disposição é fundamental para o sucesso do protocolo.",
     context: "Selecione a opção:",
     image: "/images/elixir.png",
