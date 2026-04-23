@@ -24,7 +24,7 @@ export function PreDiagnosisStep({ onComplete }: PreDiagnosisStepProps) {
         className="space-y-4"
       >
         <h1 className="text-balance text-2xl font-bold leading-tight text-foreground">
-          Não tem doença ou dor no corpo que resista a esse Elixir Natural
+          Não tem doença ou dor no corpo que resista a esse <span className="bg-[#ffff00] text-black px-1">Elixir Natural</span>
         </h1>
         <p className="text-black text-black">Faça o diagnóstico para ter acesso a fórmula completa do novo tratamento natural para as dores no corpo</p>
       </motion.div>
