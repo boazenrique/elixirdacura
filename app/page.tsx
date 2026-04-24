@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react"
 import { AnimatePresence } from "framer-motion"
-import { Header } from "@/components/funnel/header"
 import { PreDiagnosisStep } from "@/components/funnel/pre-diagnosis-step"
 import { AssessmentStep } from "@/components/funnel/assessment-step"
 import { AlertStep } from "@/components/funnel/alert-step"
@@ -42,8 +41,7 @@ export default function FunnelPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      {currentStep !== "pre-diagnosis" && <Header progress={progress} />}
-      <main className={`mx-auto max-w-[428px] px-4 pb-8 ${currentStep !== "pre-diagnosis" ? "pt-20" : "pt-8"}`}>
+      <main className="mx-auto max-w-[428px] px-4 pb-8 pt-8">
         <AnimatePresence mode="wait">
           {currentStep === "pre-diagnosis" && (
             <PreDiagnosisStep key="pre-diagnosis" onComplete={() => goToStep("assessment")} />

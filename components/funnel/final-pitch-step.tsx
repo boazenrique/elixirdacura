@@ -12,22 +12,27 @@ const testimonials = [
   { src: "/images/testimonial-12.png", alt: "Depoimento Luzia do Carmo" },
 ]
 
-export function FinalPitchStep() {
+interface FinalPitchStepProps {
+  externalCountdown?: number
+}
+
+export function FinalPitchStep({ externalCountdown }: FinalPitchStepProps) {
   const [isPlaying, setIsPlaying] = useState(false)
   const [currentTime, setCurrentTime] = useState(0)
   const [duration, setDuration] = useState(0)
   const [currentSlide, setCurrentSlide] = useState(0)
-  const [countdown, setCountdown] = useState(15 * 60) // 15 minutes in seconds
+  const [internalCountdown, setInternalCountdown] = useState(15 * 60)
+  const countdown = externalCountdown ?? internalCountdown
   const audioRef = useRef<HTMLAudioElement>(null)
 
   // Countdown timer
   useEffect(() => {
-    if (countdown <= 0) return
+    if (externalCountdown !== undefined || countdown <= 0) return
     const timer = setInterval(() => {
-      setCountdown((prev) => prev - 1)
+      setInternalCountdown((prev) => prev - 1)
     }, 1000)
     return () => clearInterval(timer)
-  }, [countdown])
+  }, [externalCountdown, countdown])
 
   const formatCountdown = (seconds: number) => {
     const mins = Math.floor(seconds / 60)
@@ -379,7 +384,7 @@ export function FinalPitchStep() {
         className="space-y-4 pt-4"
       >
         {/* Bonus Value Text */}
-        <p className="text-center text-red-600 text-sm">
+        <p className="text-center text-red-600 text-sm font-bold">
           O valor total de todo o tratamento ficaria em:<span className="line-through ml-1">R$550,00</span>
         </p>
 
