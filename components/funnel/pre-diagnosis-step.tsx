@@ -24,9 +24,8 @@ export function PreDiagnosisStep({ onComplete }: PreDiagnosisStepProps) {
         className="space-y-4"
       >
         <h1 className="text-balance text-2xl font-bold leading-tight text-foreground">
-          Não tem doença ou dor no corpo que resista a esse <span className="bg-[#ffff00] text-black px-1">Elixir Natural</span>
+          Conheça o <span className="bg-[#00a923] text-white px-1">Elixir da Cura Natural</span> que milhares de pessoas estão usando para acabar com as dores no corpo
         </h1>
-        <p className="text-black text-black">Faça o diagnóstico para ter acesso a fórmula completa do novo tratamento natural para as dores no corpo</p>
       </motion.div>
 
       {/* Hero Image */}
@@ -58,7 +57,7 @@ export function PreDiagnosisStep({ onComplete }: PreDiagnosisStepProps) {
           100% Gratuito
         </span>
         <span className="flex items-center gap-1">
-          <span className="h-2 w-2 rounded-full bg-teal-500" />2 minutos
+          <span className="h-2 w-2 rounded-full bg-[#00a923]" />2 minutos
         </span>
         <span className="flex items-center gap-1">
           <span className="h-2 w-2 rounded-full bg-amber-500" />
@@ -71,7 +70,7 @@ export function PreDiagnosisStep({ onComplete }: PreDiagnosisStepProps) {
         <Button
           onClick={onComplete}
           size="lg"
-          className="w-full bg-teal-600 py-6 text-lg font-semibold text-white shadow-lg transition-all hover:bg-teal-700 hover:shadow-xl"
+          className="w-full bg-[#00a923] py-6 text-lg font-semibold text-white shadow-lg transition-all hover:bg-[#008a1c] hover:shadow-xl"
         >
           Iniciar Diagnóstico Gratuito
         </Button>

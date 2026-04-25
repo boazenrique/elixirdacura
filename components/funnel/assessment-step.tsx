@@ -80,7 +80,7 @@ const questions: Question[] = [
   {
     id: 4,
     question: "Mais de 11.129 pessoas fizeram esse diagnóstico e no final tiveram acesso ao Elixir da Cura Natural",
-    subtitle: "Ouça com atenção o áudio da Dra. Stefanny, que explica o motivo desse tratamento funcionar tanto:",
+    subtitle: "Ouça com atenção o áudio da Dra. Stefanny, a criadora do Elixir da Cura Natural:",
     isAudioStep: true,
     audioSrc: "/001.MP3",
     reward: 3,
@@ -135,7 +135,7 @@ const questions: Question[] = [
   },
   {
     id: 10,
-    question: "Você teria 15 minutos por dia para fazer o tratamento do Elixir Natural para acabar com as dores no corpo?",
+    question: "Você quer ter acesso agora ao Elixir da Cura Natural e iniciar seu tratamento hoje?",
     subtitle: "Sua disposição é fundamental para o sucesso do protocolo.",
     context: "Selecione a opção:",
     image: "/images/elixir.png",
@@ -268,7 +268,7 @@ export function AssessmentStep({ answers, setAnswers, addProgress, onComplete }:
         particleCount: 100,
         spread: 70,
         origin: { y: 0.6 },
-        colors: ["#0d9488", "#f59e0b", "#10b981"],
+        colors: ["#00a923", "#f59e0b", "#10b981"],
       })
       setTimeout(() => setIsLoading(true), 400)
     }
@@ -288,7 +288,7 @@ export function AssessmentStep({ answers, setAnswers, addProgress, onComplete }:
           particleCount: 100,
           spread: 70,
           origin: { y: 0.6 },
-          colors: ["#0d9488", "#f59e0b", "#10b981"],
+          colors: ["#00a923", "#f59e0b", "#10b981"],
         })
         setTimeout(() => setIsLoading(true), 400)
       }
@@ -323,7 +323,7 @@ export function AssessmentStep({ answers, setAnswers, addProgress, onComplete }:
               </p>
               <div className="h-2 overflow-hidden rounded-full bg-muted">
                 <motion.div
-                  className="h-full bg-gradient-to-r from-teal-500 to-teal-600"
+                  className="h-full bg-gradient-to-r from-[#00a923] to-[#008a1c]"
                   initial={{ width: "0%" }}
                   animate={{
                     width: index < loadingStep ? "100%" : index === loadingStep ? "100%" : "0%"
@@ -352,7 +352,7 @@ export function AssessmentStep({ answers, setAnswers, addProgress, onComplete }:
       <div className="space-y-2">
         <div className="h-2 overflow-hidden rounded-full bg-muted">
           <motion.div
-            className="h-full bg-gradient-to-r from-teal-500 to-teal-600"
+            className="h-full bg-gradient-to-r from-[#00a923] to-[#008a1c]"
             initial={{ width: 0 }}
             animate={{ width: `${progress}%` }}
             transition={{ duration: 0.5, ease: "easeOut" }}
@@ -381,13 +381,7 @@ export function AssessmentStep({ answers, setAnswers, addProgress, onComplete }:
                       <span style={{ color: "#00a923" }}>{question.headlineHighlight}</span>{" "}
                     </>
                   )}
-                  {question.headlineEnd}
                 </h2>
-                {question.subtitle && (
-                  <p className="text-sm italic text-muted-foreground">
-                    {question.subtitle}
-                  </p>
-                )}
               </div>
 
               {question.sectionTitle && (
@@ -432,7 +426,7 @@ export function AssessmentStep({ answers, setAnswers, addProgress, onComplete }:
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
                 onClick={handleContinueFromAudio}
-                className="w-full rounded-xl bg-teal-600 p-4 text-center text-base font-bold text-white shadow-lg hover:bg-teal-700 transition-colors"
+                className="w-full rounded-xl bg-[#00a923] p-4 text-center text-base font-bold text-white shadow-lg hover:bg-[#008a1c] transition-colors"
               >
                 Continuar o diagnóstico
               </motion.button>
@@ -443,41 +437,6 @@ export function AssessmentStep({ answers, setAnswers, addProgress, onComplete }:
                 <h2 className="text-xl font-bold text-foreground leading-tight">
                   {question.question}
                 </h2>
-
-                {/* Carousel for Step 4 */}
-                {question.id === 4 && (
-                  <div className="space-y-4 py-4">
-                    <div className="relative overflow-hidden rounded-xl bg-muted/20">
-                      <div
-                        className="flex transition-transform duration-500 ease-in-out"
-                        style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-                      >
-                        {testimonials.map((testimonial, index) => (
-                          <div key={index} className="w-full flex-shrink-0">
-                            <Image
-                              src={testimonial.src}
-                              alt={testimonial.alt}
-                              width={428}
-                              height={428}
-                              className="w-full h-auto rounded-xl shadow-sm"
-                            />
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                    {/* Carousel Dots */}
-                    <div className="flex justify-center gap-2">
-                      {testimonials.map((_, index) => (
-                        <button
-                          key={index}
-                          onClick={() => setCurrentSlide(index)}
-                          className={`h-1.5 w-1.5 rounded-full transition-all ${index === currentSlide ? "w-4 bg-teal-500" : "bg-gray-300"
-                            }`}
-                        />
-                      ))}
-                    </div>
-                  </div>
-                )}
 
                 <p className="text-base font-bold text-red-600">
                   {question.subtitle}
@@ -562,7 +521,7 @@ export function AssessmentStep({ answers, setAnswers, addProgress, onComplete }:
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3 }}
                   onClick={handleContinueFromAudio}
-                  className="w-full rounded-xl bg-teal-600 p-4 text-center text-base font-bold text-white shadow-lg hover:bg-teal-700 transition-colors"
+                  className="w-full rounded-xl bg-[#00a923] p-4 text-center text-base font-bold text-white shadow-lg hover:bg-[#008a1c] transition-colors"
                 >
                   Continuar meu diagnóstico
                 </motion.button>
@@ -573,7 +532,6 @@ export function AssessmentStep({ answers, setAnswers, addProgress, onComplete }:
               <div className="space-y-4">
                 <div className="space-y-2">
                   <h2 className="text-2xl font-bold text-foreground">{question.question}</h2>
-                  <p className="text-sm italic text-muted-foreground">{question.subtitle}</p>
                 </div>
                 {question.image && (
                   <img
@@ -584,7 +542,7 @@ export function AssessmentStep({ answers, setAnswers, addProgress, onComplete }:
                 )}
               </div>
 
-              <p className="font-medium text-amber-700">{question.context}</p>
+
             </>
           )}
 
@@ -605,8 +563,8 @@ export function AssessmentStep({ answers, setAnswers, addProgress, onComplete }:
                       className={cn(
                         "flex flex-col rounded-xl border-2 bg-card overflow-hidden transition-all duration-300",
                         selectedOption === option
-                          ? "border-teal-500 bg-teal-50"
-                          : "border-border hover:border-teal-300 hover:bg-muted/50",
+                          ? "border-[#00a923] bg-[#e6f6e9]"
+                          : "border-border hover:border-[#66c990] hover:bg-muted/50",
                         selectedOption && selectedOption !== option && "opacity-50",
                       )}
                     >
@@ -627,8 +585,8 @@ export function AssessmentStep({ answers, setAnswers, addProgress, onComplete }:
                         <span className={cn(
                           "flex h-6 w-6 items-center justify-center rounded text-xs font-bold",
                           selectedOption === option
-                            ? "bg-teal-500 text-white"
-                            : "bg-teal-600 text-white"
+                            ? "bg-[#00a923] text-white"
+                            : "bg-[#008a1c] text-white"
                         )}>
                           {labels[index]}
                         </span>
@@ -651,8 +609,8 @@ export function AssessmentStep({ answers, setAnswers, addProgress, onComplete }:
                     className={cn(
                       "w-full rounded-xl border-2 bg-card p-4 text-left text-base font-medium transition-all duration-300",
                       selectedOption === option
-                        ? "border-teal-500 bg-teal-50 text-teal-700"
-                        : "border-border hover:border-teal-300 hover:bg-muted/50",
+                        ? "border-[#00a923] bg-[#e6f6e9] text-[#008a1c]"
+                        : "border-border hover:border-[#66c990] hover:bg-muted/50",
                       selectedOption && selectedOption !== option && "opacity-50",
                     )}
                   >
@@ -662,7 +620,7 @@ export function AssessmentStep({ answers, setAnswers, addProgress, onComplete }:
                         <motion.div
                           initial={{ scale: 0 }}
                           animate={{ scale: 1 }}
-                          className="flex h-6 w-6 items-center justify-center rounded-full bg-teal-500"
+                          className="flex h-6 w-6 items-center justify-center rounded-full bg-[#00a923]"
                         >
                           <Check className="h-4 w-4 text-white" />
                         </motion.div>

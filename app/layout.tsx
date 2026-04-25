@@ -9,7 +9,7 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Protocolo Stefanny Mota",
+  title: "Elixir da Cura Natural",
   description: "Descubra o que está bloqueando seu intestino e como resolver de forma natural",
   generator: "v0.app",
   icons: {

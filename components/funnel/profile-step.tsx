@@ -20,7 +20,7 @@ export function ProfileStep({ addProgress, onComplete }: ProfileStepProps) {
       particleCount: 60,
       spread: 50,
       origin: { y: 0.7 },
-      colors: ["#0d9488", "#f59e0b"],
+      colors: ["#00a923", "#f59e0b"],
     })
     onComplete()
   }
@@ -74,7 +74,7 @@ export function ProfileStep({ addProgress, onComplete }: ProfileStepProps) {
             value={nome}
             onChange={(e) => setNome(e.target.value)}
             placeholder="Digite seu nome..."
-            className="w-full rounded-lg border border-border bg-background px-4 py-3 text-foreground placeholder:text-muted-foreground/60 focus:border-teal-500 focus:outline-none focus:ring-1 focus:ring-teal-500"
+            className="w-full rounded-lg border border-border bg-background px-4 py-3 text-foreground placeholder:text-muted-foreground/60 focus:border-[#00a923] focus:outline-none focus:ring-1 focus:ring-[#00a923]"
           />
         </div>
       </motion.div>
@@ -83,7 +83,7 @@ export function ProfileStep({ addProgress, onComplete }: ProfileStepProps) {
         <Button
           onClick={handleContinue}
           disabled={!nome.trim()}
-          className="w-full rounded-xl bg-teal-600 py-6 text-lg font-semibold uppercase tracking-wide hover:bg-teal-700 disabled:opacity-50"
+          className="w-full rounded-xl bg-[#00a923] py-6 text-lg font-semibold uppercase tracking-wide hover:bg-[#008a1c] disabled:opacity-50"
         >
           Confirmar
         </Button>

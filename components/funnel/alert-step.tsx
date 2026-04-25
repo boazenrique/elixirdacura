@@ -98,7 +98,7 @@ export function AlertStep() {
         </p>
 
         <p className="font-bold text-foreground text-center">
-          Você gostaria de ter acesso agora a receita completa do Elixir da Cura Natural para Acabar com suas dores?
+          Clique aqui abaixo para ter acesso a receita do Elixir da Cura Natural!
         </p>
       </div>
 
@@ -110,7 +110,7 @@ export function AlertStep() {
       >
         <Button
           onClick={() => router.push("/pitch")}
-          className="w-full rounded-xl bg-teal-600 py-6 text-base font-bold hover:bg-teal-700"
+          className="w-full rounded-xl bg-[#00a923] py-6 text-base font-bold hover:bg-[#008a1c]"
         >
           Quero a receita do Elixir
         </Button>

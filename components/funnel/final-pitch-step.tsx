@@ -106,11 +106,10 @@ export function FinalPitchStep({ externalCountdown }: FinalPitchStepProps) {
       >
         <h1 className="text-3xl font-extrabold text-foreground leading-tight">
           Tenha acesso agora a receita completa do{" "}
-          <span className="text-teal-600">Elixir da Cura Natural</span>{" "}
-          e inicie hoje seu tratamento para{" "}
-          <span className="text-teal-600">acabar com suas dores no corpo.</span>
+          <span className="text-[#00a923]">Elixir da Cura Natural</span>{" "}
+          e inicie hoje seu tratamento.
         </h1>
-        <p className="text-base text-muted-foreground">
+        <p className="text-base font-bold text-foreground">
           Tratamento 100% natural, sem efeitos colaterias e sem contraindicações.
         </p>
       </motion.div>
@@ -124,13 +123,13 @@ export function FinalPitchStep({ externalCountdown }: FinalPitchStepProps) {
       >
         <h2 className="text-center text-lg font-bold text-foreground">
           Veja o diferencial desse{" "}
-          <span className="text-teal-600">tratamento:</span>
+          <span className="text-[#00a923]">tratamento:</span>
         </h2>
 
         {/* Benefit 1 */}
         <div className="space-y-3">
           <p className="text-sm font-semibold text-foreground flex items-start gap-2">
-            <span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-teal-500 text-white text-xs font-bold mt-0.5">✓</span>
+            <span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-[#00a923] text-white text-xs font-bold mt-0.5">✓</span>
             Reduz a inflamação interna que desgasta suas articulações diariamente
           </p>
           <video
@@ -146,7 +145,7 @@ export function FinalPitchStep({ externalCountdown }: FinalPitchStepProps) {
         {/* Benefit 2 */}
         <div className="space-y-3">
           <p className="text-sm font-semibold text-foreground flex items-start gap-2">
-            <span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-teal-500 text-white text-xs font-bold mt-0.5">✓</span>
+            <span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-[#00a923] text-white text-xs font-bold mt-0.5">✓</span>
             Estimula a recuperação natural das estruturas articulares
           </p>
           <video
@@ -162,7 +161,7 @@ export function FinalPitchStep({ externalCountdown }: FinalPitchStepProps) {
         {/* Benefit 3 */}
         <div className="space-y-3">
           <p className="text-sm font-semibold text-foreground flex items-start gap-2">
-            <span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-teal-500 text-white text-xs font-bold mt-0.5">✓</span>
+            <span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-[#00a923] text-white text-xs font-bold mt-0.5">✓</span>
             Força seu corpo a voltar a responder como deveria
           </p>
           <video
@@ -198,7 +197,7 @@ export function FinalPitchStep({ externalCountdown }: FinalPitchStepProps) {
           {/* Play Button */}
           <button
             onClick={togglePlayPause}
-            className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-teal-500 text-white shadow-md transition-transform hover:scale-105 active:scale-95"
+            className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-[#00a923] text-white shadow-md transition-transform hover:scale-105 active:scale-95"
           >
             {isPlaying ? (
               <Pause className="h-5 w-5" />
@@ -220,8 +219,7 @@ export function FinalPitchStep({ externalCountdown }: FinalPitchStepProps) {
                 return (
                   <div
                     key={i}
-                    className={`w-[3px] rounded-full transition-colors duration-150 ${isActive ? "bg-teal-500" : "bg-gray-300"
-                      }`}
+                    className={`w-[3px] rounded-full transition-colors duration-150 ${isActive ? "bg-[#00a923]" : "bg-gray-300"}`}
                     style={{ height: `${heights[i]}px` }}
                   />
                 )
@@ -229,7 +227,7 @@ export function FinalPitchStep({ externalCountdown }: FinalPitchStepProps) {
 
               {/* Progress indicator dot */}
               <div
-                className="absolute top-1/2 -translate-y-1/2 h-3 w-3 rounded-full bg-teal-600 shadow-md transition-all duration-150"
+                className="absolute top-1/2 -translate-y-1/2 h-3 w-3 rounded-full bg-[#008a1c] shadow-md transition-all duration-150"
                 style={{ left: `${Math.min(progress, 97)}%` }}
               />
             </div>
@@ -240,7 +238,7 @@ export function FinalPitchStep({ externalCountdown }: FinalPitchStepProps) {
 
           {/* Mic Icon */}
           <div className="flex-shrink-0">
-            <Mic className="h-5 w-5 text-teal-500" />
+            <Mic className="h-5 w-5 text-[#00a923]" />
           </div>
 
           {/* Doctor Photo */}
@@ -250,7 +248,7 @@ export function FinalPitchStep({ externalCountdown }: FinalPitchStepProps) {
               alt="Dra. Stefanny"
               width={48}
               height={48}
-              className="h-12 w-12 rounded-full object-cover ring-2 ring-teal-200"
+              className="h-12 w-12 rounded-full object-cover ring-2 ring-[#ccedda]"
             />
           </div>
         </div>
@@ -263,7 +261,7 @@ export function FinalPitchStep({ externalCountdown }: FinalPitchStepProps) {
         transition={{ delay: 0.5 }}
         className="text-center text-xl font-bold text-foreground pt-4"
       >
-        Veja tudo que você vai receber:
+        🎁GARANTA TAMBÉM 6 BÔNUS EXCLUSIVOS:
       </motion.h3>
 
       {/* Benefit Cards Grid */}
@@ -385,22 +383,22 @@ export function FinalPitchStep({ externalCountdown }: FinalPitchStepProps) {
       >
         {/* Bonus Value Text */}
         <p className="text-center text-red-600 text-sm font-bold">
-          O valor total de todo o tratamento ficaria em:<span className="line-through ml-1">R$550,00</span>
+          O valor total de todo o tratamento + bônus ficaria em:<span className="line-through ml-1">R$550,00</span>
         </p>
 
         {/* Pricing Card */}
         <div className="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm">
           {/* Green Header */}
           <div className="px-4 py-2 text-center" style={{ backgroundColor: "#05aa27" }}>
-            <p className="text-sm font-bold text-white tracking-wide">PROMOÇÃO VÁLIDA SOMENTE HOJE</p>
+            <p className="text-sm font-bold text-white tracking-wide">ELIXIR DA CURA NATURAL</p>
           </div>
 
           {/* Price Content */}
           <div className="flex items-center justify-between px-4 py-4">
-            <p className="text-lg font-bold text-foreground">Elixir da Cura Natural</p>
+            <p className="text-lg font-bold text-foreground">Elixir da Cura Natural + 🎁6 BÔNUS</p>
             <div className="text-right">
-              <p className="text-xs text-gray-500">97%off</p>
-              <p className="text-2xl font-bold" style={{ color: "#05aa27" }}>R$ 27,00</p>
+              <p className="text-xs text-gray-500">93%off</p>
+              <p className="text-2xl font-bold" style={{ color: "#05aa27" }}>R$ 37,90</p>
               <p className="text-xs text-gray-500">à vista</p>
             </div>
           </div>
@@ -414,7 +412,7 @@ export function FinalPitchStep({ externalCountdown }: FinalPitchStepProps) {
           className="block w-full rounded-xl py-4 text-base font-bold text-white text-center shadow-md transition-all active:scale-[0.98] animate-pulse-forward"
           style={{ backgroundColor: "#05aa27" }}
         >
-          Quero o tratamento agora
+          Quero acabar com as minhas dores
         </a>
       </motion.div>
 
@@ -426,7 +424,7 @@ export function FinalPitchStep({ externalCountdown }: FinalPitchStepProps) {
         className="space-y-4 pt-6"
       >
         <h3 className="text-center text-xl font-bold text-foreground">
-          Veja quem já transformou sua vida:
+          Quem usa tem resultados😍👇
         </h3>
 
         {/* Carousel Container */}
@@ -630,10 +628,10 @@ export function FinalPitchStep({ externalCountdown }: FinalPitchStepProps) {
 
           {/* Price Content */}
           <div className="flex items-center justify-between px-4 py-4">
-            <p className="text-lg font-bold text-foreground">Elixir da Cura Natural</p>
+            <p className="text-lg font-bold text-foreground">Elixir da Cura Natural + 🎁6 BÔNUS</p>
             <div className="text-right">
               <p className="text-xs text-gray-500">97%off</p>
-              <p className="text-2xl font-bold" style={{ color: "#05aa27" }}>R$ 27,00</p>
+              <p className="text-2xl font-bold" style={{ color: "#05aa27" }}>R$ 37,90</p>
               <p className="text-xs text-gray-500">à vista</p>
             </div>
           </div>
@@ -670,12 +668,12 @@ export function FinalPitchStep({ externalCountdown }: FinalPitchStepProps) {
         </div>
 
         {/* Title */}
-        <h3 className="text-xl font-bold text-foreground text-center">
+        <h3 className="text-2xl font-bold text-foreground text-center">
           Garantia de reembolso
         </h3>
 
         {/* Stars */}
-        <div className="flex justify-center gap-1" style={{ fontSize: "20px", fontWeight: "500" }}>
+        <div className="flex justify-center gap-1" style={{ fontSize: "32px", fontWeight: "700" }}>
           {[...Array(5)].map((_, i) => (
             <span key={i} className="text-yellow-400">&#9733;</span>
           ))}
@@ -786,7 +784,7 @@ export function FinalPitchStep({ externalCountdown }: FinalPitchStepProps) {
             {/* Play Button */}
             <button
               onClick={togglePlayPause}
-              className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-teal-500 text-white shadow-md transition-transform hover:scale-105 active:scale-95"
+              className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-[#00a923] text-white shadow-md transition-transform hover:scale-105 active:scale-95"
             >
               {isPlaying ? (
                 <Pause className="h-5 w-5" />
@@ -817,7 +815,7 @@ export function FinalPitchStep({ externalCountdown }: FinalPitchStepProps) {
 
                 {/* Progress indicator dot */}
                 <div
-                  className="absolute top-1/2 -translate-y-1/2 h-3 w-3 rounded-full bg-teal-600 shadow-md transition-all duration-150"
+                  className="absolute top-1/2 -translate-y-1/2 h-3 w-3 rounded-full bg-[#008a1c] shadow-md transition-all duration-150"
                   style={{ left: `${Math.min(progress, 97)}%` }}
                 />
               </div>
@@ -828,7 +826,7 @@ export function FinalPitchStep({ externalCountdown }: FinalPitchStepProps) {
 
             {/* Mic Icon */}
             <div className="flex-shrink-0">
-              <Mic className="h-5 w-5 text-teal-500" />
+              <Mic className="h-5 w-5 text-[#00a923]" />
             </div>
 
             {/* Doctor Photo */}
@@ -838,7 +836,7 @@ export function FinalPitchStep({ externalCountdown }: FinalPitchStepProps) {
                 alt="Dra. Stefanny"
                 width={48}
                 height={48}
-                className="h-12 w-12 rounded-full object-cover ring-2 ring-teal-200"
+                className="h-12 w-12 rounded-full object-cover ring-2 ring-[#ccedda]"
               />
             </div>
           </div>
