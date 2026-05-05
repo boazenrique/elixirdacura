@@ -35,7 +35,7 @@ export default function RootLayout({
         />
         <Script id="utmify-pixel">
           {`
-            window.pixelId = "69dd951e3faf62e32eddc9db";
+            window.pixelId = "69f941304d9bbb977edcbdb3";
             var a = document.createElement("script");
             a.setAttribute("async", "");
             a.setAttribute("defer", "");
@@ -43,7 +43,7 @@ export default function RootLayout({
             document.head.appendChild(a);
           `}
         </Script>
-        
+
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
